@@ -12,6 +12,8 @@ color: #131313;
     max-width: 1168px;
     margin: 0 auto; 
     outline: 1px solid red;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .wrapper{
@@ -27,8 +29,71 @@ header{
     position: absolute;
     top: 0;
     left: 0;
+   
+    outline: 1px solid blue;
     }
-  
+
+.header__conteiner {
+     background-color:#84A178 ;
+     display: flex;
+     align-items: center;
+}
+.header__logo{
+    margin-right: auto;
+}
 .main{
     flex: 1 1 auto;
+}
+.header__menu{
+    display: flex;
+    align-items: center;
+    /* flex: 1 1 auto; */
+    margin-right: 204px;
+
+}
+.menu__list{
+    display: flex;
+    /* flex: 1 1 auto; */
+    min-width: 444px;
+    
+}
+.menu__item:not(:last-child){
+margin-right: 28px;
+}
+.menu__item{
+    max-height: 20px;
+    display: flex;
+/* flex: 1 1 auto; */
+}
+.menu__link{
+font-weight: 700;
+font-size: 16px;
+line-height: 1.25;
+max-height: 20px;
+display: flex;
+/* flex: 1 1 auto; */
+
+color: #FCFCFC;
+}
+.header__btn{
+    margin: 28px 0 28px 0;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    padding: 12px 36px;
+    width: 152px;
+    height: 42px;
+    border-radius: 10px;
+}
+.btn-yellow{
+   background-color: #F8D24E;
+   color: #000000;
+}
+.btn-icon{
+    margin-left: 4px;
 }
