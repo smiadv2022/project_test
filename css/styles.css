@@ -354,6 +354,7 @@ color: #131313;
     display:block;
     width:100%;
     outline: 1px solid green;
+    margin-bottom: 48px;
 }
 .product__ingred-title{
     font-weight: 500;
@@ -367,6 +368,7 @@ margin-bottom: 24px;
 .product__md-ingred-tabl{
     display: flex;
     justify-content: space-between;
+    
 
 
 }
@@ -377,4 +379,52 @@ margin-bottom: 24px;
 .product__ingred-value{
     text-align: end;
  
+}
+.product__ingred-item{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.76;
+
+letter-spacing: 0.04em;
+
+color: #131313;
+}
+.product__ingred-item:not(:last-child){
+    margin-bottom: 11px;
+}
+.product__mdform{
+      font-weight: 400;
+font-size: 14px; 
+ line-height: 1;
+ color: #131313;
+
+}
+
+.product__mdform-input{
+    display: block;
+    width: 368px;
+    height: 42px;  
+
+
+background: rgba(248, 210, 78, 0.1);
+border: 1px solid #84A178;
+border-radius: 10px;
+
+padding: 11px 16px;
+
+
+
+}
+.product__mdform-input:not(:last-child){
+    margin-bottom: 16px;
+}
+.product__mdform-comment{
+    display: block;
+    width: 368px;
+    height: 84px;
+    padding: 11px 16px;
+    
+background: rgba(248, 210, 78, 0.1);
+border: 1px solid #84A178;
+border-radius: 10px;
 }
