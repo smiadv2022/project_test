@@ -349,12 +349,32 @@ text-align: center;
 
 color: #131313;
 }
+
+.product__md-ingred{
+    display:block;
+    width:100%;
+    outline: 1px solid green;
+}
 .product__ingred-title{
     font-weight: 500;
 font-size: 20px;
 line-height: 1.4;
-
+text-align: center;
 
 color: #131313;
 margin-bottom: 24px;
+}
+.product__md-ingred-tabl{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.product__ingred-descr{
+    text-align: start; 
+}
+.product__ingred-value{
+    text-align: end;
+ 
 }
