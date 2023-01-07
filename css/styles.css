@@ -251,7 +251,7 @@ margin-bottom: 66px;
  flex-direction: column;
  align-items: center;
     width: 568px;
-    height: 80%;
+    height: 100%;
     outline: 1px solid orange;
  
     background: #FCFCFC;
@@ -296,4 +296,65 @@ box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     background-image: url(../img/product_mod.svg);
 
 
+}
+.product__benefit-list{
+    display: flex;
+    margin-bottom: 48px;
+}
+.product_benefit-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65px;
+height: 90px;
+
+
+border: 2px solid #9CBE8F;
+border-radius: 40px;
+}
+
+.product_benefit-item:not(:last-child){
+    margin-right: 20px;
+}
+.product__benefit-tumb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+height: 53px;
+border-radius: 50%;
+margin-bottom: 6px;
+
+background: #9CBE8F;
+box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+.product__benefit-value{
+    display: block;
+    font-weight: 500;
+font-size: 12px;
+line-height: 2.33;
+
+color: #131313;
+
+
+}
+.product__benefit-descr{
+font-weight: 400;
+font-size: 12px;
+line-height: 1.25;
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #131313;
+}
+.product__ingred-title{
+    font-weight: 500;
+font-size: 20px;
+line-height: 1.4;
+
+
+color: #131313;
+margin-bottom: 24px;
 }
