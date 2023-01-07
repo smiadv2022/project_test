@@ -112,18 +112,120 @@ color: #FCFCFC;
 }
 .product{
     position: relative;
-    display:flex;
+    display: flex;
     overflow: hidden;
+    flex-direction: column;
+  
 
-    height: 400px;;
-    background-image: url(../img/Framedesk.jpg);
+    height: auto;
+    /* background-image: url(../img/Framedesk.jpg); */
 }
 .product_bcg{
     position: absolute;
+    z-index: -1;
     top:0;
     left:-70px;
     top:-50px;
     width:1396px;
     margin: 0 auto; 
     outline: 1px solid blue;
+}
+.product__subtitle{
+font-weight: 800;
+font-size: 30px;
+line-height: 1.23;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+text-align: center;
+color: #131313;
+margin-top: 58px;
+margin-bottom: 12px;
+}
+.product__title h2{
+font-family: 'Seymour One';
+font-weight: 400;
+font-size: 36px;
+line-height: 1.25;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 303px;
+color: #131313;
+}
+.priduct__item{
+    display:flex;
+    flex-direction: column;
+
+}
+.product__tumb{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    width: 370px;
+    height: 536px;
+    
+    background: #AEC6A5;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    position: relative;
+  margin-bottom: 60px;
+}
+
+.product__tumbimg{
+    display: block;
+    position:absolute;
+    content:"tttt";
+    width: 302px;
+    height: 302px;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+translate: 0 -50%;
+border-radius: 50%;
+
+}
+.product__tumbimg::before{
+    display: block;
+    position:absolute;
+    /* z-index: index 2; */
+    content:"tttt";
+    width: 302px;
+    height: 302px;
+    background-image: url(../img/product1.svg);
+    translate: 0 -16px;
+border-radius: 50%;
+}
+.product__item-title{
+    display: block;
+    font-weight: 700;
+font-size: 30px;
+line-height: 1.23;
+
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #131313;
+margin-top: 165px;
+margin-bottom: 66px;
+}
+.product__item-subtitle{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.76;
+    text-align: center;
+    justify-content: center;
+    
+    letter-spacing: 0.04em;
+    width:246px;
+    height: 142px;
+    margin-bottom: 50px;
+    
+    color: #131313;
+    text-align: center;
+}
+.product__btn{
+   width: 40px;
+   height: 16px;
+   background-color:transparent ;
+   margin-bottom: 60px;
 }
