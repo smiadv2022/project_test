@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preload" href="./img/gus-anim.gif" as="image">
+ 
 </head>
 <body>
     <div class="wrapper">
@@ -45,6 +45,23 @@
             </div>
         </div>
         <div class="main">
+            <section class="hero__container hero" >
+                <div class="hero-1">
+
+                </div>
+                <div class="hero__top">
+                    <img src="./img/Крапки.svg" alt="11" width="1200">
+                </div>
+                <div class="hero__ice">
+                    <img src="./img/ice_hero.svg" alt="11" width="456">
+                </div>
+            </section>
+
+
+
+
+
+
             <section class="product product__container">
                 <div class="product_bcg">
                     <img src="./img/Framedesk.jpg" alt="ii" width="1396">
@@ -65,12 +82,28 @@
                                     cream,
                                     sugar and
                                     natural stabilizer</p>
-                                <button class="product__btn"> <svg>
+                                <button type="submit" class="product__btn" data-product-open1> <svg>
                                         <use href="./img/symbol-defs.svg#icon-arrow" width="40" height="16"></use>
                                     </svg> </button>
                             </div>
                         </li>
-                        <li class="priduct__item">
+                        
+                        <li class="product__item">
+                            <div class="product__tumb">
+                                <div class="product__tumbimg"></div>
+                                <p class="product__tumbtxt"> </p>
+    
+                                <h3 class="product__item-title">ice coffee</h3>
+                                <p class="product__item-subtitle">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers
+
+                                </p>
+                                <button type="submit" class="product__btn" data-product-open2> <svg>
+                                        <use href="./img/symbol-defs.svg#icon-arrow" width="40" height="16"></use>
+                                    </svg> </button>
+                                 
+                            </div>
+                        </li>
+                        <li class="product__item">
                             <div class="product__tumb">
                                 <div class="product__tumbimg"></div>
                                 <p class="product__tumbtxt"> </p>
@@ -80,22 +113,7 @@
                                     cream,
                                     sugar and
                                     natural stabilizer</p>
-                                <button class="product__btn"> <svg>
-                                        <use href="./img/symbol-defs.svg#icon-arrow" width="40" height="16"></use>
-                                    </svg> </button>
-                            </div>
-                        </li>
-                        <li class="priduct__item">
-                            <div class="product__tumb">
-                                <div class="product__tumbimg"></div>
-                                <p class="product__tumbtxt"> </p>
-    
-                                <h3 class="product__item-title">ice cream</h3>
-                                <p class="product__item-subtitle">Soft ice cream with a delicate taste. Made with milk,
-                                    cream,
-                                    sugar and
-                                    natural stabilizer</p>
-                                <button class="product__btn"> <svg>
+                                <button type="submit" class="product__btn" data-product-open3> <svg>
                                         <use href="./img/symbol-defs.svg#icon-arrow" width="40" height="16"></use>
                                     </svg> </button>
                             </div>
@@ -114,8 +132,9 @@
         </div>
     </div>
 
-<div class="backdrop">
+<div class="backdrop is-hidden-product" data-product>
     <div class="product__modal">
+        <div class="product__md-close" data-product-close > <svg> <use href="./img/symbol-defs.svg#icon-product_md_close" width="24" height="24"></use> </svg> </div>
         <h4 class="product__md-title">Chololate icecream</h4>
 
         <div class="product__modal-tumbimg"></div>
@@ -161,6 +180,7 @@
         </ul>
 
         <div class="product__md-ingred">
+           
             <h4 class="product__ingred-title">Ingredients</h4>
             <div class="product__md-ingred-tabl">
                 
@@ -189,17 +209,18 @@
 
         </div>
         <div class="product__mdform">
-            <ul>
-        
-                <li class="product__mdform-input" ><input  type="text" name="Name"></li>
-                <li class="product__mdform-input" ><input type="text" name="Phone"></li>
-                <li class="product__mdform-comment"><input type="text"  name="Comment"></li>
-            </ul>
+            
+            <input class="product__mdform-input" type="text" name="product-form-name"  id="name" placeholder="Name" required> 
+            <input class="product__mdform-input" type="tel" name="product-form-phone" placeholder="Phone" required>
+            <textarea class="product__mdform-comment"   name="product-form-comment" placeholder="Comment"></textarea>
+            
         </div>
+        <button type="submit" class="product__md-btn btn btn-yellow">Submit</button>
     </div>
 </div>
 
 
-<script src="./scripts/form.js"></script>
+<!-- <script src="./scripts/form.js"></script> -->
+<script src="./scripts/product_md.js"></script>
 </body>
 </html>
