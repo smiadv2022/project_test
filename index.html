@@ -197,15 +197,12 @@
                         <li class="product__ingred-item">CSugar</li>
                         <li class="product__ingred-item">Vanilla sugar</li>
                     </ul>
-                
-
                
                     <ul class="product__ingred-value">
                         <li class="product__ingred-item">100ml</li>
                         <li class="product__ingred-item">20g</li>
                         <li class="product__ingred-item">150 ml</li>
                         <li class="product__ingred-item"> 30g</li>
-                        <li class="product__ingred-item">100ml</li>
                         <li class="product__ingred-item">40g</li>
                         <li class="product__ingred-item">10g</li>
                     </ul>
@@ -214,11 +211,21 @@
 
         </div>
         <div class="product__mdform">
-            
-            <input class="product__mdform-input" type="text" name="product-form-name"  id="name" placeholder="Name" required> 
-            <input class="product__mdform-input" type="tel" name="product-form-phone" placeholder="Phone" required>
-            <textarea class="product__mdform-comment"   name="product-form-comment" placeholder="Comment"></textarea>
-            
+            <div class="product__mdform-formfield">
+                <input class="product__mdform-input" id="name" type="text" name="product-form-name" id="name" 
+                    pattern="[A-Za-zА-Яа-яЇїЄє']" maxlength="100" required>
+                <label for="name" class="product__mdform-label">Name</label>
+            </div>
+            <div class="product__mdform-formfield">
+                <input id="tel" class="product__mdform-input-tel" pattern="[\+]\d{3}\-\d{1,10}" type="tel" name="product-form-phone" 
+                    required>
+                <label for="tel" class="product__mdform-tel-label">Phone</label>
+            </div>
+            <div class="product__mdform-textarea">
+            <textarea id="comment" class="product__mdform-comment" name="product-form-comment" 
+                maxlength="256"></textarea>
+                <label for="comment" class="product__mdform-comment-label">Comment</label>
+            </div>
         </div>
         <button type="submit" class="product__md-btn btn btn-yellow">Submit</button>
     </div>
