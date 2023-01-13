@@ -213,17 +213,17 @@
         <div class="product__mdform">
             <div class="product__mdform-formfield">
                 <input class="product__mdform-input" id="name" type="text" name="product-form-name" id="name" 
-                    pattern="[A-Za-zА-Яа-яЇїЄє']" maxlength="100" required>
+                    pattern="[A-Za-zА-Яа-яЇїЄє']" maxlength="100" required autocomplete="on" placeholder=" ">
                 <label for="name" class="product__mdform-label">Name</label>
             </div>
             <div class="product__mdform-formfield">
                 <input id="tel" class="product__mdform-input-tel" pattern="[\+]\d{3}\-\d{1,10}" type="tel" name="product-form-phone" 
-                    required>
+                    required autocomplete="off" placeholder=" ">
                 <label for="tel" class="product__mdform-tel-label">Phone</label>
             </div>
             <div class="product__mdform-textarea">
             <textarea id="comment" class="product__mdform-comment" name="product-form-comment" 
-                maxlength="256"></textarea>
+                maxlength="256" autocomplete="off" placeholder=" "></textarea>
                 <label for="comment" class="product__mdform-comment-label">Comment</label>
             </div>
         </div>

@@ -530,7 +530,8 @@ color: #131313;
 
 }
 
- .product__mdform-tel-label, .product__mdform-label{
+ .product__mdform-tel-label, .product__mdform-label
+{
      position: absolute;
      left: 16px;
      top: 50%;
@@ -544,7 +545,9 @@ color: #131313;
      
 }
 
-.product__mdform-input-tel:focus + .product__mdform-tel-label, .product__mdform-input:focus + .product__mdform-label{
+.product__mdform-input-tel:focus + .product__mdform-tel-label, .product__mdform-input:focus + .product__mdform-label,
+.product__mdform-input-tel:not(:placeholder-shown) + .product__mdform-tel-label, .product__mdform-input:not(:placeholder-shown) + .product__mdform-label
+{
     top:0px;
     left:50px;
     font-weight: 500;
@@ -584,7 +587,8 @@ color: #131313;
      color: #131313;
 }
 
-.product__mdform-comment:focus + .product__mdform-comment-label{
+.product__mdform-comment:focus + .product__mdform-comment-label, .product__mdform-comment:not(:placeholder-shown) + .product__mdform-comment-label 
+{
     top:0px;
     left:50px;
     font-weight: 500;
